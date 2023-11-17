@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+
+html,
+body,
+#root {
+    @apply text-light-purple;
+    @apply font-barlow;
+    /* @apply bg-black; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-image {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./images/home-mobile-cover.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -10;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media only screen and (min-width: 768px) {
+    .home-image {
+        height: 140%;
+        background-image: url('./images/home-tablet-cover.jpg');
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media only screen and (min-width: 1025px) {
+    .home-image {
+        height: 100%;
+        background-image: url('./images/home-desktop-cover.jpg');
+    }
 }
 
-.App-link {
-  color: #61dafb;
+.destination-image {
+    position: absolute;
+    height: 120%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./images/destination-mobile-cover.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -10;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media only screen and (min-width: 768px) {
+    .destination-image {
+        height: 145%;
+        background-image: url('./images/destination-tablet-cover.jpg');
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .destination-image {
+        height: 120%;
+        background-image: url('./images/destination-desktop-cover.jpg');
+    }
+}
+
+.crew-image {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./images/crew-mobile-cover.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -10;
+}
+
+@media only screen and (min-width: 768px) {
+    .crew-image {
+        height: 140%;
+        background-image: url('./images/crew-tablet-cover.jpg');
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .crew-image {
+        height: 125%;
+        background-image: url('./images/crew-desktop-cover.jpg');
+    }
+}
+
+.technology-image {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./images/technology-mobile-cover.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -10;
+}
+
+@media only screen and (min-width: 768px) {
+    .technology-image {
+        height: 145%;
+        background-image: url('./images/technology-tablet-cover.jpg');
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .technology-image {
+        height: 130%;
+        background-image: url('./images/technology-desktop-cover.jpg');
+    }
 }
