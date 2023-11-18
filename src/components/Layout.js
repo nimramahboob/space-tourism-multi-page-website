@@ -98,16 +98,16 @@ function Layout({ children, image }) {
 
                     <ul className='text-white uppercase text-base tracking-[2.7px] font-barlow-condensed mx-8 mt-14'>
                         <li className='mb-10'>
-                            <Link to='/' className='bg-opacity-white'><span className='font-bold'>00</span> Home</Link>
+                            <Link to='/' onClick={() => setToggleMenu(false)} className='bg-opacity-white'><span className='font-bold'>00</span> Home</Link>
                         </li>
                         <li className='mb-10'>
-                            <Link to='/destination' className='bg-opacity-white'><span className='font-bold'>01</span> Destination</Link>
+                            <Link to='/destination' onClick={() => setToggleMenu(false)} className='bg-opacity-white'><span className='font-bold'>01</span> Destination</Link>
                         </li>
                         <li className='mb-10'>
-                            <Link to='/crew' className='bg-opacity-white'><span className='font-bold'>02</span> Crew</Link>
+                            <Link to='/crew' onClick={() => setToggleMenu(false)} className='bg-opacity-white'><span className='font-bold'>02</span> Crew</Link>
                         </li>
                         <li className='mb-10'>
-                            <Link to='/technology' className='bg-opacity-white'><span className='font-bold'>03</span> Technology</Link>
+                            <Link to='/technology' onClick={() => setToggleMenu(false)} className='bg-opacity-white'><span className='font-bold'>03</span> Technology</Link>
                         </li>
                     </ul>
                 </div>
